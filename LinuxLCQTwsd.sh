@@ -1,16 +1,21 @@
+#!/bin/bash
+
 cd ~/Documents
 mkdir lunar-client-qt
 cd lunar-client-qt
-curl "https://github.com/Youded-byte/lunar-client-qt/releases/download/v1.5.4/linux.tar.gz"
-curl "https://github.com/Weave-MC/Weave-Loader/releases/download/v0.2.4/Weave-Loader-Agent-0.2.4.jar"
-tar -xf "linux.tar.gz"
-cd ~/
-mkdir .weave
-cd ~/.weave
-mkdir mods
-echo put mods in ~/.weave/mods
-echo lcqt should open now, just add weave as an agent. ~/Documents/lunar-client-qt/Weave-Loader-0.2.4.jar
-echo lcqt also has a nice mod manager you can use
-cd ~/Documents/lunar-client-qt/Lunar Client QT/
-./lunar-client-qt
 
+curl -L -o linux.tar.gz "https://github.com/Youded-byte/lunar-client-qt/releases/download/v1.5.4/linux.tar.gz"
+curl -L -o Weave-Loader-Agent-0.2.4.jar "https://github.com/Weave-MC/Weave-Loader/releases/download/v0.2.4/Weave-Loader-Agent-0.2.4.jar"
+tar -xf linux.tar.gz
+timeout 1s rm linux.tar.gz
+
+cd ~/
+mkdir -p .weave/mods
+
+echo "Put your modifications in ~/.weave/mods."
+echo "LCQT should open now, just add Weave as an agent. ~/Documents/lunar-client-qt/Weave-Loader-0.2.4.jar"
+echo "LCQT also has a nice mod manager you can use if you wish."
+echo "I would also recommend defining your Java runtime in the general tab to Lunar's bundled Java installation in ~/.lunarclient/jre"
+
+cd ~/Documents/lunar-client-qt/Lunar\ Client\ Qt
+./lunar-client-qt
