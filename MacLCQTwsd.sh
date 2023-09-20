@@ -6,7 +6,7 @@ cd lunar-client-qt
 
 curl -L -o mac.tar.gz "https://github.com/Youded-byte/lunar-client-qt/releases/download/v1.5.4/mac.tar.gz"
 curl -L -o Weave-Loader-Agent-0.2.4.jar "https://github.com/Weave-MC/Weave-Loader/releases/download/v0.2.4/Weave-Loader-Agent-0.2.4.jar"
-tar -xf linux.tar.gz
+tar -xf mac.tar.gz
 timeout 1s rm mac.tar.gz
 
 cd ~/
