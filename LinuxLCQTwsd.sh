@@ -1,9 +1,9 @@
 cd ~/Documents
 mkdir lunar-client-qt
 cd lunar-client-qt
-curl "https://github.com/Youded-byte/lunar-client-qt/releases/download/v1.5.4/linux.tar.gz" -O
+curl "https://github.com/Youded-byte/lunar-client-qt/releases/download/v1.5.4/linux.tar.gz"
 curl "https://github.com/Weave-MC/Weave-Loader/releases/download/v0.2.4/Weave-Loader-Agent-0.2.4.jar"
-tar -xf linux.tar.gz
+tar -xf "linux.tar.gz"
 cd ~/
 mkdir .weave
 cd ~/.weave
