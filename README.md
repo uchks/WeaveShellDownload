@@ -37,3 +37,8 @@
 - https://github.com/Tryflle/LLIWeaveBatchDownload | Smaller but maintained, for LLI
 - https://github.com/Tryflle/WeaveBatchDownload | Older but maintained, for LCQT
 - https://github.com/unethicalteam/lcbud | Newer and cleaner, supports most injectors.
+## TODO
+- Get Mac to work
+- Get LLI Linux to work
+- Make a mod installer, a cleaner and modern version of my old one.
+- Document everything.
