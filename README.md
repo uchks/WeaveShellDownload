@@ -34,6 +34,6 @@
 ## License
 - This project is licensed under GPL 3.0.
 ## here can I find a Windows version?
-- https://github.com/Tryflle/LLIWeaveBatchDownload
-- https://github.com/Tryflle/WeaveBatchDownload
-  
+- https://github.com/Tryflle/LLIWeaveBatchDownload | Smaller but maintained, for LLI
+- https://github.com/Tryflle/WeaveBatchDownload | Older but maintained, for LCQT
+- https://github.com/unethicalteam/lcbud | Newer and cleaner, supports most injectors.
