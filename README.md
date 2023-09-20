@@ -1,11 +1,12 @@
 # Overview
 - Weave shell download is the best install script for Weave on Unix systems.
 # Usage
-- Download the code as a zip and extract it
+- Go to the releases page
 - Take note of your operating system
 - Find your method of choice:
   1. lli: lunar-launcher-inject: attaches agents to lunar launcher
   2. lcqt: lunar-client-qt: third party launcher made with the qt5 framework
+- Download the corresponding file for your operating system and method
 - Open terminal in the directory where you have the script installed
 - Double click the file you need to run, if it doesn't work or you wish to use terminal:
   1. Give the script elevated permissions by running `chmod +x FILENAME.sh`
