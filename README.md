@@ -1,5 +1,6 @@
 # Note
 - Currently in the process of being made and may not function properly.
+- The download script for LCQT on Linux is currently confirmed to be working.
 # Usage
 - Download the code as a zip and extract it
 - Take note of your operating system
