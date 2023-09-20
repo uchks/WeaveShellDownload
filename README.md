@@ -1,6 +1,5 @@
-# Note
-- Currently in the process of being made and may not function properly.
-- Download scripts for Linux are currently confirmed to be working.
+# Overview
+- Weave shell download is the best install script for Weave on Unix systems.
 # Usage
 - Download the code as a zip and extract it
 - Take note of your operating system
@@ -39,6 +38,5 @@
 - https://github.com/Tryflle/WeaveBatchDownload | Older but maintained, for LCQT
 - https://github.com/unethicalteam/lcbud | Newer and cleaner, supports most injectors.
 ## TODO
-- Get Mac to work
 - Make a mod installer, a cleaner and modern version of my old one.
 - Document everything.
