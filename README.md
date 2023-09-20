@@ -5,11 +5,12 @@
 - Download the code as a zip and extract it
 - Take note of your operating system
 - Find your method of choice:
-  i. lli: lunar-launcher-inject: attaches agents to lunar launcher
-  ii. lcqt: lunar-client-qt: third party launcher made with the qt5 framework
+  1. lli: lunar-launcher-inject: attaches agents to lunar launcher
+  2. lcqt: lunar-client-qt: third party launcher made with the qt5 framework
 - Open terminal in the directory where you have the script installed
-- Give the script elevated permissions by running `chmod +x FILENAME.sh`
-- Run the script by executing `./FILENAME.sh`, ensure you did the step above first.|
+- Double click the file you need to run, if it doesn't work or you wish to use terminal:
+  1. Give the script elevated permissions by running `chmod +x FILENAME.sh`
+  2. Run the script by executing `./FILENAME.sh`, ensure you did the step above first
 
 
 # Paths
