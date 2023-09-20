@@ -1,6 +1,6 @@
 # Note
 - Currently in the process of being made and may not function properly.
-- The download script for LCQT on Linux is currently confirmed to be working.
+- Download scripts for Linux are currently confirmed to be working.
 # Usage
 - Download the code as a zip and extract it
 - Take note of your operating system
@@ -40,6 +40,5 @@
 - https://github.com/unethicalteam/lcbud | Newer and cleaner, supports most injectors.
 ## TODO
 - Get Mac to work
-- Get LLI Linux to work
 - Make a mod installer, a cleaner and modern version of my old one.
 - Document everything.
