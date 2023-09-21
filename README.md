@@ -39,5 +39,7 @@
 - https://github.com/Tryflle/WeaveBatchDownload | Older but maintained, for LCQT
 - https://github.com/unethicalteam/lcbud | Newer and cleaner, supports most injectors.
 ## TODO
+- fix cd with Mac causing errors
+- create a .sh to start lli with chmod for Mac 
 - Make a mod installer, a cleaner and modern version of my old one.
 - Document everything.
