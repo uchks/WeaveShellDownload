@@ -17,7 +17,8 @@ download_and_extract() { # Function to download files via cURL and extract .tar.
 
 get_latest_weave_loader_version() { # Function to parse GitHub API and find the latest version of Weave Loader.
   local latest_version_url="https://api.github.com/repos/Weave-MC/Weave-Loader/releases/latest"
-  local version="$(curl -s "$latest_version_url" | grep -oE '"tag_name": "([^"]+)' | cut -d'"' -f4)"
+  local version=$(curl -s "$latest_version_url" | grep -oE '"tag_name": "([^"]+)' | cut -d'"' -f4)
+  version="${version#v}"
   echo "$version"
 }
 
@@ -35,7 +36,7 @@ else
 fi
 
 latest_weave_loader_version=$(get_latest_weave_loader_version) # Creates a variable of latest Weave Loader version for use below.
-download_and_extract "https://github.com/Weave-MC/Weave-Loader/releases/download/$latest_weave_loader_version/Weave-Loader-Agent-$latest_weave_loader_version.jar" "Weave-Loader-Agent-$latest_weave_loader_version.jar"
+download_and_extract "https://github.com/Weave-MC/Weave-Loader/releases/download/v$latest_weave_loader_version/Weave-Loader-Agent-$latest_weave_loader_version.jar" "Weave-Loader-Agent-$latest_weave_loader_version.jar"
 mkdir -p ~/.weave/mods
 
 echo "LCQT should open now, just add Weave as an agent"
