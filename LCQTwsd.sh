@@ -4,7 +4,7 @@ download_and_extract() {
   local url="$1"
   local file="$2"
   curl -L -o "$file" "$url"
-  
+
   if [[ "$file" == *.jar ]]; then
     echo "Downloaded $file"
   else
@@ -26,12 +26,7 @@ cd lunar-client-qt
 if [[ "$OSTYPE" == "linux"* ]]; then
   download_and_extract "https://github.com/Youded-byte/lunar-client-qt/releases/latest/download/linux.tar.gz" "linux.tar.gz"
 elif [[ "$(uname)" == "Darwin" ]]; then
-  if [[ "$(uname -p)" == "i386" || "$(uname -p)" == "arm" ]]; then
-    download_and_extract "https://github.com/Youded-byte/lunar-client-qt/releases/latest/download/mac.tar.gz" "mac.tar.gz"
-  else
-    echo "Unsupported operating system."
-    exit 1
-  fi
+  download_and_extract "https://github.com/Youded-byte/lunar-client-qt/releases/latest/download/mac.tar.gz" "mac.tar.gz"
 else
   echo "Unsupported operating system."
   exit 1
@@ -42,15 +37,12 @@ download_and_extract "https://github.com/Weave-MC/Weave-Loader/releases/download
 mkdir -p ~/.weave/mods
 
 echo "Put your modifications in ~/.weave/mods."
-echo "LCQT should open now, just add Weave as an agent. ~/Documents/lunar-client-qt/Weave-Loader-0.2.4.jar"
+echo "LCQT should open now, just add Weave as an agent. ~/Documents/lunar-client-qt/Weave-Loader-$latest_weave_loader_version.jar"
 echo "LCQT also has a nice mod manager you can use if you wish."
 echo "I would also recommend defining your Java runtime in the general tab to Lunar's bundled Java installation in ~/.lunarclient/jre"
 
-cd ~/Documents/lunar-client-qt
 if [[ "$(uname)" == "Darwin" ]]; then
-  if [[ "$(uname -p)" == "i386" || "$(uname -p)" == "arm" ]]; then
-    open ./lunar-client-qt.app
-  else
-    ./lunar-client-qt
-  fi
+  open ./lunar-client-qt.app
+else
+  ./lunar-client-qt
 fi
