@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
+clear
 
 download_and_extract() {
   local url="$1"
   local file="$2"
   curl -L -o "$file" "$url"
+  clear
 
   if [[ "$file" == *.jar ]]; then
-    echo "Downloaded $file"
+    :
   else
     tar -xf "$file" || { echo "Error extracting $file"; exit 1; }
     rm "$file"
@@ -36,10 +38,13 @@ latest_weave_loader_version=$(get_latest_weave_loader_version)
 download_and_extract "https://github.com/Weave-MC/Weave-Loader/releases/download/$latest_weave_loader_version/Weave-Loader-Agent-$latest_weave_loader_version.jar" "Weave-Loader-Agent-$latest_weave_loader_version.jar"
 mkdir -p ~/.weave/mods
 
-echo "Put your modifications in ~/.weave/mods."
-echo "LCQT should open now, just add Weave as an agent. ~/Documents/lunar-client-qt/Weave-Loader-$latest_weave_loader_version.jar"
-echo "LCQT also has a nice mod manager you can use if you wish."
-echo "I would also recommend defining your Java runtime in the general tab to Lunar's bundled Java installation in ~/.lunarclient/jre"
+echo "LCQT should open now, just add Weave as an agent"
+echo "~/Documents/lunar-client-qt/Weave-Loader-$latest_weave_loader_version.jar"
+echo
+echo "Put your mods in ~/.weave/mods or use LCQT's mod manager."
+echo
+echo "I recommend defining \"Use Custom JRE\" to Lunar's bundled JRE:"
+echo "~/.lunarclient/jre"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   open ./lunar-client-qt.app
